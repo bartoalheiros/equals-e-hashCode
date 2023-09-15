@@ -7,3 +7,16 @@ target/
 ._.DS_Store
 .project
 .classpath
+
+.idea/
+*.iml
+*.iws
+
+out/
+target/
+
+build/
+logs/
+
+*.swp
+*.swo
