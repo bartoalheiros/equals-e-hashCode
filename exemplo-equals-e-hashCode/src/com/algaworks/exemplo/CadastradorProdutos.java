@@ -38,6 +38,7 @@ public class CadastradorProdutos {
 			}
 		}
 		
+		//chama o toString e printa os resultados na tela
 		produtos.forEach(System.out::println);
 
 		System.out.println("Fim");
