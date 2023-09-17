@@ -1,5 +1,7 @@
 package com.algaworks.exemplo.modelo;
 
+import java.util.Objects;
+
 public class Produto {
 
 	private String sku; // IHPD2360, IEPL1010, CHPO21, CHPR21
@@ -32,9 +34,15 @@ public class Produto {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		Produto outro = (Produto) obj;
-		return this.sku.equals(outro.getSku());
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Produto produto = (Produto) o;
+		return sku.equals(produto.sku);
 	}
 
+	@Override
+	public int hashCode() {
+		return Objects.hash(sku);
+	}
 }

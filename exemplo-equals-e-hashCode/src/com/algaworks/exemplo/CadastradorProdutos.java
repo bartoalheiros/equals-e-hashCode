@@ -2,14 +2,14 @@ package com.algaworks.exemplo;
 
 import com.algaworks.exemplo.modelo.Produto;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class CadastradorProdutos {
 
 	public static void main(String[] args) {
-		Collection<Produto> produtos = new ArrayList<>();
+		Collection<Produto> produtos = new HashSet<>();
 		
 		System.out.println("##### Cadastro de produtos #####\n");
 		
